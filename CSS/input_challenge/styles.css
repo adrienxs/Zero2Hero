@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+body {
+	--primaryColor: #3D5AFE;
+	--primaryDarkColor: #0039CB;
+	--primaryLightColor: #EAEFFF;
+	--secondaryColor: ;
+	--secondaryDarkColor: ;
+	--secondaryLightColor: ;
+
+	--backgroundColor: #ffffff;
+	--surfaceColor: #ffffff;
+
+	--errorColor: #D32F2F;
+	--errorDarkColor: #9A0007;
+
+	--OnPrimaryColor: #ffffff;
+	--OnSecondaryColor: #ffffff;
+	--OnBackgroundColor: #000000;
+	--OnSurfaceColor: #000000;
+	--OnDefaultColor: #3F3F3F;
+	--OnDisabledColor: #9E9E9E;
+
+	--OnErrorColor: #ffffff;
+	--defaultColor: #E0E0E0;
+	--defaultDarkColor: #AEAEAE;
+	--disbledColor: #E0E0E0;
+
+	background-color: var(--backgroundColor);
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+}
+
+.defaultBox {
+	margin: 0;
+	font-size: 10px;
+	text-align: left;
+}
+
+.helpText {
+	margin: 0 0 0 10px;
+	color: var(--defaultDarkColor);
+}
+
+.errorText {
+	margin: 0 0 0 10px;
+	color: var(--errorColor);
+}
+
+.textbox__icon {
+	display: flex;
+	align-items: center;
+	height: 21px;
+	width: 21px;
+}
+
+
+.textbox1 {
+	background-color: var(--backgroundColor);
+	color: var(--OnBackgroundColor);
+	outline: 0;
+	border: 1px solid var(--defaultColor);
+	border-radius: 10px;
+	margin: 5px;
+	padding: 15px 35px 15px 35px;
+	text-align: center;
+	width: 250px;
+	cursor: pointer;
+}
+
+.textbox1:hover,
+.textbox2:hover,
+.textbox4:hover,
+.textarea1:hover {
+	border: 1px solid var(--defaultDarkColor);
+}
+
+.textbox1:focus,
+.textbox4:focus,
+.textarea1:focus {
+	border: 1px solid var(--primaryColor);
+}
+
+.textbox2,
+.textbox2:focus {
+	background-color: var(--backgroundColor);
+	color: var(--OnBackgroundColor);
+	outline: 0;
+	border: 1px solid var(--errorColor);
+	border-radius: 10px;
+	margin: 5px;
+	padding: 15px 35px 15px 35px;
+	text-align: center;
+	width: 250px;
+	cursor: pointer;
+}
+
+.textbox3 {
+	background-color: var(--disbledColor);
+	color: var(--OnDisabledColor);
+	outline: 0;
+	border: 1px solid var(--defaultDarkColor);
+	border-radius: 10px;
+	margin: 5px;
+	padding: 15px 35px 15px 35px;
+	text-align: center;
+	width: 250px;
+}
+
+.textbox4 {
+	background-color: var(--backgroundColor);
+	background-image: url(img/public_icon.svg);
+	background-repeat: no-repeat;
+	background-position: 3%;
+	background-size: 21px;
+	color: var(--OnBackgroundColor);
+	outline: 0;
+	border: 1px solid var(--defaultColor);
+	border-radius: 10px;
+	margin: 5px;
+	padding: 15px 35px 15px 35px;
+	text-align: center;
+	width: 250px;
+	cursor: pointer;
+}
+
+.textarea1 {
+	font-family: 'Open Sans', sans-serif;
+	background-color: var(--backgroundColor);
+	color: var(--OnBackgroundColor);
+	outline: 0;
+	border: 1px solid var(--defaultColor);
+	border-radius: 10px;
+	margin: 5px;
+	padding: 10px 35px 10px 35px;
+	width: 250px;
+	cursor: pointer;
+}
+
+.textbox1:focus::placeholder,
+.textbox2:focus::placeholder,
+.textbox4:focus::placeholder,
+.textarea1:focus::placeholder {
+	color: transparent;
+}
