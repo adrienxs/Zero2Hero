@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+body {
+	--primaryColor: #3f51b5;
+	--primaryDarkColor: #002984;
+	--primaryLightColor: #c5cae9;
+	--secondaryColor: #ff5722;
+	--secondaryDarkColor: #c41c00;
+	--secondaryLightColor: #ffccbc;
+	--backgroundColor: #fafafa;
+	--surfaceColor: #ffffff;
+	--errorColor: #d50000;
+	--OnPrimaryColor: #ffffff;
+	--OnSecondaryColor: #ffffff;
+	--OnBackgroundColor: #000000;
+	--OnSurfaceColor: #000000;
+	--OnErrorColor: #ffffff;
+	--defaultColor: #bdbdbd;
+	--defaultDarkColor: #8d8d8d;
+	--defaultLightColor: #efefef;
+	--inputButtonPadding: 12px;
+	--inputTextPadding: 15px;
+
+	background-color: var(--backgroundColor);
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin: 0;
+}
+
+h2 {
+	margin: 0;
+}
+
+h3 {
+	margin: 0;
+}
+
+.box {
+	background-color: var(--surfaceColor);
+	color: var(--OnSurfaceColor);
+	border: 1px solid var(--primaryColor);
+	border-radius: 10px;
+	margin: 5px 5px;
+	padding: 35px;
+}
+
+@media screen and (max-width: 800px) {
+	.menuItem {
+		visibility: hidden;
+	}
+
+	.line {
+		background-color: var(--surfaceColor);
+		border-top: 4px solid var(--primaryColor);
+		width: 32px;
+		margin: 0 0 7px 0;
+		padding: 0;
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.mainMenu {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 5px;
+}
+
+.hiddenMenu {
+	display: block;
+	padding: 5px;
+}
+
+.menuItem {
+	background-color: var(--backgroundColor);
+	color: var(--OnBackgroundColor);
+	border-bottom: 2px solid var(--primaryColor);
+	margin: 0;
+	padding: 5px;
+}
+
+input[type="button"].button1 {
+	background-color: var(--defaultLightColor);
+	color: var(--defaultDarkColor);
+	padding: var(--inputButtonPadding);
+	outline: 0;
+	border: 0;
+	border-radius: 10px;
+	margin: 5px;
+	width: 100px;
+	font-weight: bold;
+}
+
+input[type="button"].button1:hover {
+	background-color: var(--defaultColor);
+	color: var(--OnPrimaryColor);
+}
+
+input[type="button"].button1:focus {
+	background-color: var(--defaultColor);
+	color: var(--OnPrimaryColor);
+}
+
+input[type="button"].button2 {
+	background-color: var(--backgroundColor);
+	color: var(--primaryColor);
+	padding: var(--inputButtonPadding);
+	outline: 0;
+	border: 1px solid var(--primaryColor);
+	border-radius: 12px;
+	margin: 5px;
+	width: 100px;
+	font-weight: bold;
+}
+
+input[type="button"].button2:hover {
+	background-color: var(--primaryLightColor);
+	color: var(--OnPrimaryColor);
+}
+
+input[type="button"].button2:focus {
+	background-color: var(--primaryLightColor);
+	color: var(--OnPrimaryColor);
+}
+
+input[type="button"].button3 {
+	background-color: var(--backgroundColor);
+	color: var(--primaryColor);
+	padding: var(--inputButtonPadding);
+	outline: 0;
+	border: 0;
+	border-radius: 12px;
+	margin: 5px;
+	width: 100px;
+	font-weight: bold;
+}
+
+input[type="button"].button3:hover {
+	background-color: var(--primaryLightColor);
+	color: var(--OnPrimaryColor);
+}
+
+input[type="button"].button3:focus {
+	background-color: var(--primaryLightColor);
+	color: var(--OnPrimaryColor);
+}
+
+input[type="button"].button4 {
+	background-color: var(--primaryColor);
+	color: var(--OnPrimaryColor);
+	padding: var(--inputButtonPadding);
+	outline: 0;
+	border: 0;
+	border-radius: 12px;
+	margin: 5px;
+	width: 100px;
+	font-weight: bold;
+}
+
+input[type="button"].button4:hover {
+	background-color: var(--primaryDarkColor);
+	color: var(--OnPrimaryColor);
+}
+
+input[type="button"].button4:focus {
+	background-color: var(--primaryDarkColor);
+	color: var(--OnPrimaryColor);
+}
+
+input[type="button"].button5 {
+	background-color: var(--primaryColor);
+	background-image: url(img/aca.svg);
+	background-repeat: no-repeat;
+	background-position: 10%;
+	background-size: 21px 21px;
+	color: var(--OnPrimaryColor);
+	padding: var(--inputButtonPadding);
+	outline: 0;
+	border: 0;
+	border-radius: 12px;
+	margin: 5px;
+	width: 150px;
+	font-weight: bold;
+}
+
+input[type="button"].button5:hover {
+	background-color: var(--primaryDarkColor);
+	color: var(--OnPrimaryColor);
+}
+
+input[type="button"].button5:focus {
+	background-color: var(--primaryDarkColor);
+	color: var(--OnPrimaryColor);
+}
+
+input[type="button"].button6 {
+	background-color: var(--secondaryColor);
+	color: var(--OnSecondaryColor);
+	padding: var(--inputButtonPadding);
+	outline: 0;
+	border: 0;
+	border-radius: 12px;
+	margin: 5px;
+	width: 100px;
+	font-weight: bold;
+}
+
+input[type="button"].button6:hover {
+	background-color: var(--secondaryDarkColor);
+	color: var(--OnSecondaryColor);
+}
+
+input[type="button"].button6:focus {
+	background-color: var(--secondaryDarkColor);
+	color: var(--OnSecondaryColor);
+}
+
+input[type=text] {
+	padding: var(--inputTextPadding);
+	border: 1px solid var(--primaryLightColor);
+	border-radius: 10px;
+	margin: 5px;
+	background-color: var(--primaryLightColor);
+	outline: 0;
+}
+
+input[type=text]:focus {
+	padding: var(--inputTextPadding);
+	border: 1px solid var(--primaryColor);
+	border-radius: 10px;
+	margin: 5px;
+	background-color: var(--primaryLightColor);
+	outline: 0;
+}
