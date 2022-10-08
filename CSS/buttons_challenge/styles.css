@@ -1,29 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 body {
-	--primaryColor: #3f51b5;
-	--primaryDarkColor: #002984;
-	--primaryLightColor: #c5cae9;
-	--secondaryColor: #ff5722;
-	--secondaryDarkColor: #c41c00;
-	--secondaryLightColor: #ffccbc;
-	--backgroundColor: #fafafa;
+	--primaryColor: #3D5AFE;
+	--primaryDarkColor: #0039CB;
+	--primaryLightColor: #EAEFFF;
+	--secondaryColor: ;
+	--secondaryDarkColor: ;
+	--secondaryLightColor: ;
+
+	--backgroundColor: #ffffff;
 	--surfaceColor: #ffffff;
-	--errorColor: #d50000;
+
+	--errorColor: #D32F2F;
+	--errorDarkColor: #9A0007;
+
 	--OnPrimaryColor: #ffffff;
 	--OnSecondaryColor: #ffffff;
 	--OnBackgroundColor: #000000;
 	--OnSurfaceColor: #000000;
+	--OnDefaultColor: #3F3F3F;
+	--OnDisabledColor:#9E9E9E;
+
 	--OnErrorColor: #ffffff;
-	--defaultColor: #bdbdbd;
-	--defaultDarkColor: #8d8d8d;
-	--defaultLightColor: #efefef;
-	--inputButtonPadding: 12px;
-	--inputTextPadding: 15px;
+	--defaultColor: #E0E0E0;
+	--defaultDarkColor: #AEAEAE;
+	--disbledColor: #E0E0E0;
 
 	background-color: var(--backgroundColor);
 	color: black;
 	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	justify-content: center;
+	text-align: center;
 	margin: 0;
 	padding: 0;
 }
@@ -40,148 +48,91 @@ h3 {
 	margin: 0;
 }
 
-.box {
-	background-color: var(--surfaceColor);
-	color: var(--OnSurfaceColor);
-	border: 1px solid var(--primaryColor);
-	border-radius: 10px;
-	margin: 5px 5px;
-	padding: 35px;
-}
-
-@media screen and (max-width: 800px) {
-	.menuItem {
-		visibility: hidden;
-	}
-
-	.line {
-		background-color: var(--surfaceColor);
-		border-top: 4px solid var(--primaryColor);
-		width: 32px;
-		margin: 0 0 7px 0;
-		padding: 0;
-		border-radius: 10px;
-		display: flex;
-		justify-content: center;
-	}
-}
-
-.mainMenu {
-	display: flex;
+.button__icon {
+	display: inline-flex;
 	align-items: center;
-	justify-content: space-around;
-	padding: 5px;
+	height: 21px;
+	width: 21px;
+	filter: invert(1);
 }
 
-.hiddenMenu {
-	display: block;
-	padding: 5px;
+.button__text {
+	display: inline-flex;
+	align-items: center;
+	padding: 12px;
 }
 
-.menuItem {
-	background-color: var(--backgroundColor);
-	color: var(--OnBackgroundColor);
-	border-bottom: 2px solid var(--primaryColor);
-	margin: 0;
-	padding: 5px;
-}
-
-input[type="button"].button1 {
-	background-color: var(--defaultLightColor);
-	color: var(--defaultDarkColor);
-	padding: var(--inputButtonPadding);
+.button1 {
+	background-color: var(--defaultColor);
+	color: var(--OnDefaultColor);
 	outline: 0;
 	border: 0;
 	border-radius: 10px;
 	margin: 5px;
-	width: 100px;
+	width: 150px;
 	font-weight: bold;
+	cursor: pointer;
 }
 
-input[type="button"].button1:hover {
-	background-color: var(--defaultColor);
-	color: var(--OnPrimaryColor);
+.button1:hover,
+.button1:focus {
+	background-color: var(--defaultDarkColor);
 }
 
-input[type="button"].button1:focus {
-	background-color: var(--defaultColor);
-	color: var(--OnPrimaryColor);
-}
-
-input[type="button"].button2 {
+.button2 {
 	background-color: var(--backgroundColor);
 	color: var(--primaryColor);
-	padding: var(--inputButtonPadding);
 	outline: 0;
 	border: 1px solid var(--primaryColor);
 	border-radius: 12px;
 	margin: 5px;
-	width: 100px;
+	width: 150px;
 	font-weight: bold;
+	cursor: pointer;
 }
 
-input[type="button"].button2:hover {
+.button2:hover,
+.button2:focus {
 	background-color: var(--primaryLightColor);
-	color: var(--OnPrimaryColor);
 }
 
-input[type="button"].button2:focus {
-	background-color: var(--primaryLightColor);
-	color: var(--OnPrimaryColor);
-}
-
-input[type="button"].button3 {
+.button3 {
 	background-color: var(--backgroundColor);
 	color: var(--primaryColor);
-	padding: var(--inputButtonPadding);
 	outline: 0;
 	border: 0;
 	border-radius: 12px;
 	margin: 5px;
-	width: 100px;
+	width: 150px;
 	font-weight: bold;
+	cursor: pointer;
 }
 
-input[type="button"].button3:hover {
+.button3:hover,
+.button3:focus {
 	background-color: var(--primaryLightColor);
-	color: var(--OnPrimaryColor);
 }
 
-input[type="button"].button3:focus {
-	background-color: var(--primaryLightColor);
-	color: var(--OnPrimaryColor);
-}
-
-input[type="button"].button4 {
+.button4 {
 	background-color: var(--primaryColor);
 	color: var(--OnPrimaryColor);
-	padding: var(--inputButtonPadding);
 	outline: 0;
 	border: 0;
 	border-radius: 12px;
 	margin: 5px;
-	width: 100px;
+	width: 150px;
 	font-weight: bold;
+	cursor: pointer;
 }
 
-input[type="button"].button4:hover {
+.button4:hover,
+.button4:focus {
 	background-color: var(--primaryDarkColor);
-	color: var(--OnPrimaryColor);
 }
 
-input[type="button"].button4:focus {
-	background-color: var(--primaryDarkColor);
-	color: var(--OnPrimaryColor);
-}
-
-input[type="button"].button5 {
-	background-color: var(--primaryColor);
-	background-image: url(img/aca.svg);
-	background-repeat: no-repeat;
-	background-position: 10%;
-	background-size: 21px 21px;
-	color: var(--OnPrimaryColor);
-	padding: var(--inputButtonPadding);
+.buttonDisabled {
+	background-color: var(--disbledColor);
+	color: var(--OnDisabledColor);
 	outline: 0;
 	border: 0;
 	border-radius: 12px;
@@ -190,52 +141,40 @@ input[type="button"].button5 {
 	font-weight: bold;
 }
 
-input[type="button"].button5:hover {
-	background-color: var(--primaryDarkColor);
+.button5 {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--primaryColor);
 	color: var(--OnPrimaryColor);
-}
-
-input[type="button"].button5:focus {
-	background-color: var(--primaryDarkColor);
-	color: var(--OnPrimaryColor);
-}
-
-input[type="button"].button6 {
-	background-color: var(--secondaryColor);
-	color: var(--OnSecondaryColor);
 	padding: var(--inputButtonPadding);
 	outline: 0;
 	border: 0;
 	border-radius: 12px;
 	margin: 5px;
-	width: 100px;
+	width: 150px;
 	font-weight: bold;
+	cursor: pointer;
 }
 
-input[type="button"].button6:hover {
-	background-color: var(--secondaryDarkColor);
+.button5:hover,
+.button5:focus {
+	background-color: var(--primaryDarkColor);
+}
+
+.button6 {
+	background-color: var(--errorColor);
 	color: var(--OnSecondaryColor);
-}
-
-input[type="button"].button6:focus {
-	background-color: var(--secondaryDarkColor);
-	color: var(--OnSecondaryColor);
-}
-
-input[type=text] {
-	padding: var(--inputTextPadding);
-	border: 1px solid var(--primaryLightColor);
-	border-radius: 10px;
-	margin: 5px;
-	background-color: var(--primaryLightColor);
 	outline: 0;
+	border: 0;
+	border-radius: 12px;
+	margin: 5px;
+	width: 150px;
+	font-weight: bold;
+	cursor: help;
 }
 
-input[type=text]:focus {
-	padding: var(--inputTextPadding);
-	border: 1px solid var(--primaryColor);
-	border-radius: 10px;
-	margin: 5px;
-	background-color: var(--primaryLightColor);
-	outline: 0;
+.button6:hover,
+.button6:focus {
+	background-color: var(--errorDarkColor);
 }
